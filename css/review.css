@@ -1,0 +1,209 @@
+.review-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.review-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.review-form input[type="number"] {
+    width: 80px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.review-form textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: vertical;
+    transition: border-color 0.3s;
+}
+
+.review-form input:focus,
+.review-form textarea:focus {
+    outline: none;
+    border-color: #4a90e2;
+}
+
+.review-form button {
+    background-color: #4a90e2;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.review-form button:hover {
+    background-color: #357abd;
+}
+
+.review-login-message {
+    text-align: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #666;
+    font-size: 16px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .review-form {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .review-form textarea {
+        min-height: 100px;
+    }
+}
+/* Container cho tất cả đánh giá */
+.reviews-container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+/* Tiêu đề phần đánh giá */
+.reviews-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+/* Style cho từng đánh giá */
+.review-item {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.review-item:hover {
+    transform: translateY(-2px);
+}
+
+/* Thông tin người đánh giá */
+.review-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.reviewer-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 16px;
+}
+
+.review-date {
+    color: #7f8c8d;
+    font-size: 14px;
+}
+
+/* Style cho rating */
+.review-rating {
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #f1c40f;
+    font-size: 18px;
+}
+
+.star-filled::before {
+    content: "★";
+}
+
+.star-empty::before {
+    content: "☆";
+}
+
+/* Nội dung đánh giá */
+.review-content {
+    color: #34495e;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+/* Style cho phần không có đánh giá */
+.no-reviews {
+    text-align: center;
+    padding: 40px 20px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    color: #666;
+    font-style: italic;
+}
+
+/* Phân trang đánh giá nếu có */
+.reviews-pagination {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.pagination-button {
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination-button:hover {
+    background: #f0f0f0;
+}
+
+.pagination-button.active {
+    background: #4a90e2;
+    color: white;
+    border-color: #4a90e2;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .reviews-container {
+        margin: 15px;
+        padding: 10px;
+    }
+    
+    .review-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .review-date {
+        margin-top: 5px;
+    }
+}

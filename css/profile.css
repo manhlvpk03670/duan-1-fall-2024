@@ -1,0 +1,117 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #495057;
+}
+
+.container {
+    max-width: 900px;
+    margin-top: 30px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #ff7f32; /* Màu cam chủ đạo */
+}
+
+.breadcrumb {
+    background-color: transparent;
+    padding: 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb-item a {
+    text-decoration: none;
+    color: #ff7f32; /* Màu cam cho liên kết breadcrumb */
+}
+
+
+
+.breadcrumb-item {
+    font-weight: bold;
+    color: #333; /* Màu chữ của breadcrumb */
+}
+
+.avatar img {
+    border-radius: 50%;
+    max-width: 300px;
+    max-height: 300px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    font-weight: 600;
+    color: #333;
+}
+
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn-primary {
+    background-color: #ff7f32; /* Màu cam cho nút submit */
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e67e22; /* Màu cam đậm khi hover */
+}
+
+.btn-warning {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #f39c12; /* Màu vàng cam cho nút đăng xuất */
+    border: none;
+}
+
+.btn-warning:hover {
+    background-color: #e67e22; /* Màu vàng cam đậm khi hover */
+}
+
+.form-control-file {
+    margin-top: 10px;
+}
+
+.avatar {
+    margin-top: 10px;
+    color: #ff7f32; /* Màu cam cho tiêu đề ảnh đại diện */
+}
+
+.avatar .form-label {
+    font-size: 25px;
+    color: #ff7f32;
+}
+
+/* Màu cho các mục <li> trong breadcrumb */
+.breadcrumb-item {
+    color: #ff7f32; /* Màu cam cho các mục trong breadcrumb */
+}
+
+.breadcrumb-item a {
+    color: #ff7f32; /* Màu cam cho các liên kết trong breadcrumb */
+}
+
+.breadcrumb-item.active {
+    color: brown; /* Màu nâu cho mục hiện tại */
+    text-decoration: underline; /* Thêm gạch chân */
+}
